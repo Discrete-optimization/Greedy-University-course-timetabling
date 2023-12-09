@@ -16,7 +16,7 @@ class Queue:
         new_element = (current_sign, current_value)
         self.list.append(new_element)
 
-    def get_first(self):
+    def pop(self):
         item = self.list[0]
         self.dequeue()
         return item
@@ -29,7 +29,7 @@ class Queue:
 
 list = [('A', 3), ('B', 3), ('C', 3), ('D', 2), ('E', 2), ('F', 1)]
 Q = Queue(list)
-print(Q.get_first())
-print(Q.get_first())
-print(Q.get_first())
+print(Q.pop())
+print(Q.pop())
+print(Q.pop())
 Q.printer()
