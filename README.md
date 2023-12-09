@@ -1,2 +1,2 @@
-# Greedy-University-course-timetabling
+# Greedy University course timetabling
 use Greedy University course timetabling
