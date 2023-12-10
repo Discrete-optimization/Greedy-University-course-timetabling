@@ -1,3 +1,7 @@
+class Sorting:
+    def __init__(self, array):
+        self.array = array
+
 class Queue:
     def __init__(self, list):
         self.list = list
