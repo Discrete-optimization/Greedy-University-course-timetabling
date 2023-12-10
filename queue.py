@@ -6,7 +6,7 @@ class Sorting:
         return self.array
 
     def insertionSort(self):
-        self.array.sort(key=lambda x: x[1])
+        self.array.sort(key=lambda x: x[1], reverse=True)
 
 class Queue:
     def __init__(self, list):
