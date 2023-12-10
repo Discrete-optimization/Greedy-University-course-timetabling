@@ -1,3 +1,13 @@
+class Sorting:
+    def __init__(self, array):
+        self.array = array
+
+    def get_array(self):
+        return self.array
+
+    def insertionSort(self):
+        self.array.sort(key=lambda x: x[1], reverse=True)
+
 class Queue:
     def __init__(self, list):
         self.list = list
@@ -28,8 +38,6 @@ class Queue:
 
 
 list = [('A', 3), ('B', 3), ('C', 3), ('D', 2), ('E', 2), ('F', 1)]
-Q = Queue(list)
-print(Q.pop())
-print(Q.pop())
-print(Q.pop())
-Q.printer()
+S = Sorting(list)
+S.insertionSort()
+print(S.get_array())
