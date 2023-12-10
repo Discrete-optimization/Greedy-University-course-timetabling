@@ -2,6 +2,9 @@ class Sorting:
     def __init__(self, array):
         self.array = array
 
+    def get_array(self):
+        return self.array
+
     def insertionSort(self):
         n = len(self.array)  # Get the length of the array
 
