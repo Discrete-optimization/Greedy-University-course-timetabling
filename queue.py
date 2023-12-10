@@ -49,8 +49,6 @@ class Queue:
 
 
 list = [('A', 3), ('B', 3), ('C', 3), ('D', 2), ('E', 2), ('F', 1)]
-Q = Queue(list)
-print(Q.pop())
-print(Q.pop())
-print(Q.pop())
-Q.printer()
+S = Sorting
+S.insertionSort()
+print(S.get_array())
