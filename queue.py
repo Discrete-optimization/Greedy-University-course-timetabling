@@ -5,7 +5,7 @@ class Sorting:
     def get_array(self):
         return self.array
 
-    def insertionSort(self):
+    def sort(self):
         self.array.sort(key=lambda x: x[1], reverse=True)
 
 class Queue:
@@ -39,5 +39,5 @@ class Queue:
 
 list = [('A', 3), ('B', 3), ('C', 3), ('D', 2), ('E', 2), ('F', 1)]
 S = Sorting(list)
-S.insertionSort()
+S.sort()
 print(S.get_array())
