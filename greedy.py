@@ -11,7 +11,8 @@ class Greedy:
     def greedy(self):
         for room in self.data.get_classRooms():
             for time in self.data.get_classTimes():
-                print(room, time)
+                print(room, time, end=" ")
+            print("...")
 
 G1 = Greedy()
 G1.greedy()
