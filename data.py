@@ -3,6 +3,7 @@ class Data:
         print("Data constructor is called!")
         self.classRooms = ['ClassRoom 1', 'ClassRoom 2']
         self.classTimes = ['08:00 - 10:00', '10:00 - 12:00']
+        self.weekdays = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
         self.cources = [
             ['cource 1', 1],
             ['cource 2', 3],

@@ -9,9 +9,13 @@ class Greedy:
         self.queue = Queue(self.data.get_courses())
 
     def greedy(self):
+        result = []
         for room in self.data.get_classRooms():
             for time in self.data.get_classTimes():
-                print(room, time, end=" ")
+                course = self.queue.pop()
+                curr_cell = [room, time, course]
+                result.append(curr_cell)
+                print(course[0], end=" ")
             print("...")
 
 G1 = Greedy()
