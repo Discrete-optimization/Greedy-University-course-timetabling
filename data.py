@@ -17,5 +17,14 @@ class Data:
             ['cource 11', 1]
         ]
 
+    def get_classRooms(self):
+        return self.classRooms
+
+    def get_classTimes(self):
+        return self.classTimes
+
+    def get_courses(self):
+        return self.cources
+
 
 data = Data()
