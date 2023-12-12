@@ -10,7 +10,7 @@ class Greedy:
 
     def greedy(self):
         result = []
-        for day in self.data.get_weeDays()
+        for day in self.data.get_weeDays():
             print(day)
             for room in self.data.get_classRooms():
                 for time in self.data.get_classTimes():
