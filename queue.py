@@ -10,6 +10,7 @@ class Sorting:
 
 class Queue:
     def __init__(self, list):
+        print("Queue constructor is called!")
         self.list = list
 
     def get_list(self):
