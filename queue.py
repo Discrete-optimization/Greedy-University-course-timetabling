@@ -13,7 +13,8 @@ class Queue:
     def __init__(self, list):
         print("Queue constructor is called!")
         sorter = Sorting(list)
-        list = sorter.sort()
+        sorter.sort()
+        list = sorter.get_array()
         self.list = list
 
     def get_list(self):
