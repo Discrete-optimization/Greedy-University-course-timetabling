@@ -26,8 +26,14 @@ class Data:
     def get_courses(self):
         return self.cources
 
+    def available_classes(self):
+        classRooms_num = len(self.classRooms)
+        classTimes_num = len(self.classTimes)
+
+        available_class = classRooms_num * classTimes_num
+
+        return available_class
+
+
 
 data = Data()
-print(data.classRooms)
-print(data.classTimes)
-print(data.cources)
