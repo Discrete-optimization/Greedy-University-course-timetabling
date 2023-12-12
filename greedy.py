@@ -17,8 +17,10 @@ class Greedy:
                     course = self.queue.pop()
                     curr_cell = [room, time, course]
                     result.append(curr_cell)
-                    print(course[0], end=" ")
+                    print(course, end=" ")
                 print("...")
+
+        print(self.queue.get_list())
 
 G1 = Greedy()
 G1.greedy()
