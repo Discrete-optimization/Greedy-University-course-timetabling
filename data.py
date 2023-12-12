@@ -1,8 +1,8 @@
 class Data:
     def __init__(self):
         print("Data constructor is called!")
-        self.classRooms = ['ClassRoom 1', 'ClassRoom 2', 'ClassRoom 3']
-        self.classTimes = ['08:00 - 10:00', '10:00 - 12:00', '12:00 - 14:00']
+        self.classRooms = ['ClassRoom 1', 'ClassRoom 2']
+        self.classTimes = ['08:00 - 10:00', '10:00 - 12:00']
         self.cources = [
             ['cource 1', 3],
             ['cource 2', 3],
