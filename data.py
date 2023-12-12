@@ -24,6 +24,9 @@ class Data:
     def get_classTimes(self):
         return self.classTimes
 
+    def get_weeDays(self):
+        return self.weekdays
+
     def get_courses(self):
         return self.cources
 

@@ -10,13 +10,15 @@ class Greedy:
 
     def greedy(self):
         result = []
-        for room in self.data.get_classRooms():
-            for time in self.data.get_classTimes():
-                course = self.queue.pop()
-                curr_cell = [room, time, course]
-                result.append(curr_cell)
-                print(course[0], end=" ")
-            print("...")
+        for day in self.data.get_weeDays()
+            print(day)
+            for room in self.data.get_classRooms():
+                for time in self.data.get_classTimes():
+                    course = self.queue.pop()
+                    curr_cell = [room, time, course]
+                    result.append(curr_cell)
+                    print(course[0], end=" ")
+                print("...")
 
 G1 = Greedy()
 G1.greedy()
