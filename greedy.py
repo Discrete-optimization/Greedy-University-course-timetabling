@@ -1,14 +1,17 @@
 from queue import Queue
 from data import Data
+from queue import Sorting
 
 class Greedy:
     def __init__(self):
         print("Greedy constructor is called!")
         self.data = Data()
-        self.queue = Queue(self.data)
+        self.queue = Queue(self.data.get_courses())
 
-
-
+    def greedy(self):
+        for room in self.data.get_classRooms():
+            for time in self.data.get_classTimes():
+                print(room, time)
 
 G1 = Greedy()
-print(G1.data.available_classes())
+G1.greedy()
