@@ -1,5 +1,6 @@
 class Sorting:
     def __init__(self, array):
+        print("Sorting constructor is called!")
         self.array = array
 
     def get_array(self):
@@ -10,6 +11,10 @@ class Sorting:
 
 class Queue:
     def __init__(self, list):
+        print("Queue constructor is called!")
+        sorter = Sorting(list)
+        sorter.sort()
+        list = sorter.get_array()
         self.list = list
 
     def get_list(self):
@@ -35,9 +40,3 @@ class Queue:
     def printer(self):
         for element in self.list:
             print("{} with value: {}".format(element[0], element[1]))
-
-
-list = [('A', 3), ('B', 3), ('C', 3), ('D', 2), ('E', 2), ('F', 1)]
-S = Sorting(list)
-S.sort()
-print(S.get_array())
