@@ -1,5 +1,6 @@
 class Sorting:
     def __init__(self, array):
+        print("Sorting constructor is called!")
         self.array = array
 
     def get_array(self):
@@ -11,6 +12,8 @@ class Sorting:
 class Queue:
     def __init__(self, list):
         print("Queue constructor is called!")
+        sorter = Sorting(list)
+        list = sorter.sort()
         self.list = list
 
     def get_list(self):
