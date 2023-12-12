@@ -20,6 +20,9 @@ class Queue:
     def get_list(self):
         return self.list
 
+    def get_first(self):
+        return self.list[0]
+
     def dequeue(self):
         current_element = self.list[0]
         current_sign = current_element[0]
