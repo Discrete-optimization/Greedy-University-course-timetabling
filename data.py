@@ -33,8 +33,3 @@ class Data:
         available_class = classRooms_num * classTimes_num
 
         return available_class * 5 #five das in each week!
-
-
-
-data = Data()
-print(data.available_classes())
