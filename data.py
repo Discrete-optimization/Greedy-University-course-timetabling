@@ -28,3 +28,6 @@ class Data:
 
 
 data = Data()
+print(data.classRooms)
+print(data.classTimes)
+print(data.cources)
