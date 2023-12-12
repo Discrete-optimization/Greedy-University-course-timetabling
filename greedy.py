@@ -8,3 +8,4 @@ class Greedy:
 
 
 G1 = Greedy()
+print(G1.data.available_classes())
