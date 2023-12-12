@@ -37,3 +37,4 @@ class Data:
 
 
 data = Data()
+print(data.available_classes())
