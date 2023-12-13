@@ -1,6 +1,5 @@
-from queue import Queue
 from data import Data
-from queue import Sorting
+from queue import *
 
 class Greedy:
     def __init__(self):
@@ -28,7 +27,3 @@ class Greedy:
                         curr_cell = [room, time, course]
                         result.append(curr_cell)
         return result
-
-
-G1 = Greedy()
-print(G1.greedy())

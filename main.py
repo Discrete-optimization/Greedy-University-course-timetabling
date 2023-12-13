@@ -1,10 +1,5 @@
-from queue import Queue
-from data import Data
+from greedy import Greedy
 
 
-
-data = Data()
-courses = data.get_courses()
-
-queue = Queue(courses)
-print(queue.get_list())
+G1 = Greedy()
+print(G1.greedy())
