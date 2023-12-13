@@ -44,7 +44,8 @@ class Queue:
 
 
     def remove(self, item):
-        self.list.remove(item)
+        if (len(self.list) > 0):
+            self.list.remove(item)
 
 
     def printer(self):
