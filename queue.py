@@ -21,7 +21,10 @@ class Queue:
         return self.list
 
     def get_first(self):
-        return self.list[0]
+        if(len(self.list) > 0):
+            return self.list[0]
+        else:
+            return [0, 0]
 
     def dequeue(self):
         current_element = self.list[0]
@@ -31,13 +34,18 @@ class Queue:
 
         self.list.remove(current_element)
 
-        new_element = (current_sign, current_value)
+        new_element = [current_sign, current_value]
         self.list.append(new_element)
 
     def pop(self):
         item = self.list[0]
         self.dequeue()
         return item
+
+
+    def remove(self, item):
+        if (len(self.list) > 0):
+            self.list.remove(item)
 
 
     def printer(self):
