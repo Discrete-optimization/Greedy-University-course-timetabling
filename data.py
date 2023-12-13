@@ -12,8 +12,8 @@ class Data:
             ['cource 5', 3],
             ['cource 6', 1],
             ['cource 7', 2],
-            ['cource 8', 3],
-            ['cource 9', 3],
+            ['cource 8', 2],
+            ['cource 9', 2],
         ]
 
     def get_classRooms(self):
