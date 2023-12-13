@@ -15,7 +15,11 @@ class Greedy:
             for room in self.data.get_classRooms():
                 for time in self.data.get_classTimes():
                     top = self.queue.get_first()
+                    loop_counter = 0
                     while(top[1] == 0):
+                        loop_counter += 1
+                        if(loop_counter >= len(self.queue.get_list())):
+                            break
                         self.queue.remove(top)
                         top = self.queue.get_first()
 
