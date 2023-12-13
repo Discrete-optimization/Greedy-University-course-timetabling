@@ -29,8 +29,6 @@ class Greedy:
                         result.append(curr_cell)
                         print(course, end=" ")
                 print("...")
-            print(self.queue.get_list())
-        print(self.queue.get_list())
 
 G1 = Greedy()
 G1.greedy()
