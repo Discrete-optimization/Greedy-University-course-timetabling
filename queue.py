@@ -31,7 +31,7 @@ class Queue:
 
         self.list.remove(current_element)
 
-        new_element = (current_sign, current_value)
+        new_element = [current_sign, current_value]
         self.list.append(new_element)
 
     def pop(self):
