@@ -40,6 +40,10 @@ class Queue:
         return item
 
 
+    def remove(self, item):
+        self.list.remove(item)
+
+
     def printer(self):
         for element in self.list:
             print("{} with value: {}".format(element[0], element[1]))

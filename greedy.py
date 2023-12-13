@@ -15,13 +15,17 @@ class Greedy:
             for room in self.data.get_classRooms():
                 for time in self.data.get_classTimes():
                     top = self.queue.get_first()
+                    if (top[1] == 0):
+                        self.queue.remove(top)
+                        top = self.queue.get_first()
+
                     if(top[1] > 0):
                         course = self.queue.pop()
                         curr_cell = [room, time, course]
                         result.append(curr_cell)
                         print(course, end=" ")
                 print("...")
-
+            print(self.queue.get_list())
         print(self.queue.get_list())
 
 G1 = Greedy()
